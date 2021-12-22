@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Welcome Page</title>
+    <style>
+      .container {
+        margin-left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="main" class="container">
+      <h1>KODLUYORUZ</h1>
+      <div id="welcome"></div>
+      <h2 id="hour"></h2>
+      <h2>Tarihinde <strong>Kodluyoruz Frontend Web Development Patikası</strong>'nın Javascript bölümü 1.Ödevindesiniz</h2>
+    </div>
+
+    <script>
+        function allIn (){
+            const userName = prompt("İsminizi Giriniz...");
+      const mainHeader = document.getElementById("welcome");
+      const hour = document.getElementById("hour");
+      const tarih = new Date();
+      let updateHour = tarih.getHours();
+      let updateMinute = tarih.getMinutes();
+      let updateSecond = tarih.getSeconds();
+
+      let day = tarih.getDay();
+
+      switch (day) {
+        case 1:
+          day = "Pazartesi";
+          break;
+        case 2:
+          day = "Salı";
+          break;
+        case 3:
+          day = "Çarşamba";
+          break;
+        case 4:
+          day = "Perşembe";
+          break;
+        case 5:
+          day = "Cuma";
+          break;
+        case 6:
+          day = "Cumartesi";
+          break;
+        case 7:
+          day = "Pazar";
+          break;
+      }
+
+      function checkT(x){
+        if (x < 10) {
+          x = "0" + x;
+        }
+        return x;
+      };
+
+      updateHour = checkT(updateHour);
+      updateMinute = checkT(updateMinute);
+      updateSecond = checkT(updateSecond);
+
+      mainHeader.innerHTML = `<h2>Merhaba, ${userName}! Hoş geldin!</h2>`;
+      hour.innerText +=
+        updateHour + ":" + updateMinute + ":" + updateSecond + " " + day;
+        
+        }let t = setTimeout(allIn,500);
+         
+    </script>
+  </body>
+</html>
