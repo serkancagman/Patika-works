@@ -1,0 +1,29 @@
+.mainContact{
+    width: 300px;
+    background-color: violet;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 0;
+    border-radius: 10px;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+ul{
+    padding: 0;
+}
+ul li{
+    list-style: none;
+    background-color: aqua;
+    width: 270px;
+}
+ul li a{
+    font-weight: 600;
+    margin: 5px;
+    
+}
