@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+body{
+  background-color: #fff;
+}
+label{
+  display: block;
+}
