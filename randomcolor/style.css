@@ -1,0 +1,22 @@
+.boxWrapper{
+    width: 300px;
+    height: 300px;
+    background-color: whitesmoke;
+    border-radius: 10px;
+}
+body{
+    height: 100vh;
+}
+#main{
+    background-image: linear-gradient(to right, #f9a3f8, #cdf8f7);
+}
+.selectInput{
+    width: 150px;
+    height: 40px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding: 10px;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    outline: none;
+}
