@@ -1,0 +1,23 @@
+.swiper-pagination-progressbar .swiper-pagination-progressbar-fill{
+    background: #F5C01A !important;
+}
+.swiper-button-prev{
+    color: #F5C01A !important;
+}
+.swiper-button-next{
+    color: #F5C01A !important;
+}
+.btn{
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+}
+@media screen and (max-width:420px){
+    body::before{
+        content: "";
+        display: block;
+        height: 126px;
+    }
+  }
+.nav-link{
+    color: #F5C01A !important;
+}
